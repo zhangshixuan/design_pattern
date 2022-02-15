@@ -1,5 +1,8 @@
 package com.xuan.design.flyweight.Chess;
 
+/**
+ * 抽象享元角色
+ */
 public abstract class AbstractChessman {
     //坐标
     protected int x;

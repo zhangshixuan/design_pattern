@@ -1,5 +1,9 @@
 package com.xuan.design.flyweight.Chess;
 
+
+/**
+ * 具体享元角色
+ */
 public class BlackChessman extends AbstractChessman {
     public BlackChessman() {
         super("黑棋");
