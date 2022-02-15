@@ -3,7 +3,7 @@ package com.xuan.design.structure_type.flyweight.Chess;
 import java.util.Random;
 
 /**
- * 五子棋
+ * 五子棋 https://www.cnblogs.com/lixin-link/p/11104658.html
  */
 public class Client {
     public static void main(String[] args) {
