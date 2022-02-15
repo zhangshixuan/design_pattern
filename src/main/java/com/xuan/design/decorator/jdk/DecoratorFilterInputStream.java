@@ -3,7 +3,7 @@ package com.xuan.design.decorator.jdk;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 
-public class Decorator {
+public class DecoratorFilterInputStream {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
