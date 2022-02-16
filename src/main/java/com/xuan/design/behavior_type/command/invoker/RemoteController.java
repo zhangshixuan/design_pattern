@@ -69,12 +69,8 @@ public class RemoteController {
      * 撤销按钮按下
      */
     public void undoButtonWasPushed() {
-        if (undoCommand != null) {
-            if (undoCommand.status == 1) {
-                undoCommand.undo();
-            }
-        } else {
-            System.out.println("没有要撤销的按钮");
+        if (undoCommand != null && undoCommand.status == 1) {
+            undoCommand.undo();
         }
     }
 }
