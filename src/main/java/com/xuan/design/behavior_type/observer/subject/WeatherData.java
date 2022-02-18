@@ -14,9 +14,10 @@ public class WeatherData implements Subject{
     private float pressure;
     private float humidity;
 
+    //维护所有观察者
     private List<Observer> list = new ArrayList<>();
 
-
+    //气象站改变天气数据
     public void setData(float temperature, float pressure, float humidity) {
         this.temperature = temperature;
         this.pressure = pressure;
@@ -24,6 +25,7 @@ public class WeatherData implements Subject{
         dataChange();
     }
 
+    //有变更，就通知
     public void dataChange() {
         notifyObservers();
     }
@@ -40,6 +42,7 @@ public class WeatherData implements Subject{
         }
     }
 
+    //通知所有观察者进行更新
     @Override
     public void notifyObservers() {
         for (Observer o : list) {
