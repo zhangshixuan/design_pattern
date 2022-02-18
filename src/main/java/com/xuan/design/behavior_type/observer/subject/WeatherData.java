@@ -22,11 +22,6 @@ public class WeatherData implements Subject{
         this.temperature = temperature;
         this.pressure = pressure;
         this.humidity = humidity;
-        dataChange();
-    }
-
-    //有变更，就通知
-    public void dataChange() {
         notifyObservers();
     }
 
